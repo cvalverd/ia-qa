@@ -1,0 +1,72 @@
+@TSCID1060520
+Scenario Outline: 02 - Bloquear TDC por robo o perdida con Retiro programado
+ Given Tengo una tarjeta por renovar con el cliente "<rut>" en portal personas
+ And Inicio sesion en Bci Personas e ingreso rut de cliente "<rut>" y password "111222" de un cliente titular BCI y presiono boton "INGRESAR" en portal personas
+ And Selecciono menu "Tarjetas" en portal personas
+ And Selecciono el submenu "Bloqueo de tarjetas" en Tarjetas
+ And Visualizo opcion "Bloqueo y reposición" en Tarjetas
+ And Selecciono opcion "Bloqueo y reposición" en Tarjetas
+ And Visualizo pantalla con el titulo "Bloqueo y reposición" en bloqueo por Robo o Perdida
+ And Visualizo texto "Podrás bloquear cualquiera de tus tarjetas de crédito y solicitar una nueva." en bloqueo por Robo o Perdida
+ And Visualizo pestanas "BLOQUEO Y REPOSICIÓN" y "TARJETAS DIGITALES A REPONER" en bloqueo por Robo o Perdida
+ And Visualizo contador de pasos "1/3" en Primer Paso de formulario para Bloqueo y Reposicion
+ And Visualizo texto "Selecciona la tarjeta que quieres bloquear" en Primer Paso de formulario para Bloqueo y Reposicion
+ And Selecciono TDC a bloquear "<tarjeta>" en Primer Paso de formulario para Bloqueo y Reposicion
+ And Selecciono "Continuar" en Primer Paso de formulario para Bloqueo y Reposicion
+ And Visualizo contador de pasos "2/3" en Segundo Paso de formulario para Bloqueo y Reposicion
+ And Visualizo texto "Elige el motivo de la reposición" en Segundo Paso de formulario para Bloqueo y Reposicion
+ And Visualizo radio button "Robo o pérdida" en Segundo Paso de formulario para Bloqueo y Reposicion
+ And Visualizo radio button "Deterioro de la tarjeta" en Segundo Paso de formulario para Bloqueo y Reposicion
+ And Selecciono radio button "Robo o pérdida" en Segundo Paso de formulario para Bloqueo y Reposicion
+ And Selecciono "Continuar" en Segundo Paso de formulario para Bloqueo y Reposicion
+ And Visualizo contador de pasos "3/3" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Visualizo texto "Elige dónde quieres recibir tu nueva tarjeta" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Visualizo texto "Región" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Selecciono una region en el combobox con el texto por defecto "Seleccionar region" "<Region>" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Visualizo texto "Comuna" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Selecciono una comuna en el combobox con el texto por defecto "Selecionar comuna" "<Comuna>" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Visualizo texto "Elige la forma de entrega" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Visualizo radio button "Retiro inmediato" con texto "Solo en sucursales habilitadas" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Visualizo radio button "Retiro programado" con texto "Desde 4 días hábiles, en todas las sucursales" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Visualizo radio button "Envío a domicilio" con texto "Recibirás tu tarjeta a partir de 4 días hábiles" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Selecciono radio button "Retiro programado" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Visualizo texto "Sucursal" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Selecciono la "<Sucursal>" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Visualizo etiqueta "Podrás retirar tu tarjeta" "el: DD/MM/AAAA" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Selecciono boton "Continuar" en Tercer Paso de formulario para Bloqueo y Reposicion
+ And Visualizo modal con titulo "¿Confirmas el bloqueo de la tarjeta **** <tarjeta>?" en confirmar bloqueo
+ And Visualizo texto informativo "Es posible que el bloqueo demore algunos minutos en reflejarse en línea." en confirmar bloqueo
+ And Presiono boton "Confirmar" en confirmar bloqueo
+ And Visualizo titulo "Tarjeta bloqueada con éxito" en comprobante de bloqueo
+ And Visualizo texto informativo "Las suscripciones y pagos automáticos asociados a esta tarjeta no se podrán cobrar." en comprobante de bloqueo
+ And Visualizo texto "Detalle de la operación" en comprobante de bloqueo
+ And Visualizo texto "Número de tarjeta bloqueada:" con "**** **** **** " "<tarjeta>" en comprobante de bloqueo
+ And Visualizo "Fecha y hora:" con "DD/MM/AAAA - HH:MM horas" en comprobante de bloqueo
+ And Visualizo "Tipo de operación:" con "Bloqueo y reposición" en comprobante de bloqueo
+ And Visualizo "Código de bloqueo:" con su respectivo codigo en comprobante de bloqueo
+ And Visualizo texto para retiro "Sucursal de retiro nueva tarjeta" en comprobante de bloqueo
+ And Visualizo texto que indica "Tipo de entrega:" con "Retiro programado en sucursal" en comprobante de bloqueo
+ And Visualizo texto que indica "Dirección:" con "Chacabuco 848, Santiago, Región Metropolitana" en comprobante de bloqueo
+ And Visualizo texto "Tarjeta disponible desde:" con "Fecha" que concuerda con la seleccionada anteriormente visualizado en comprobante de bloqueo
+ And Visualizo texto que indica "Horario de atención:" con "Lunes a viernes, 9:00 a 14:00 horas. Sábados, domingos y festivos, cerrado." en comprobante de bloqueo
+ And Visualizo boton "Entiendo" en comprobante de bloqueo
+ And Ingreso a la pagina de correo en ambiente pre-productivo "http://bcicert/mail/" en login del correo
+ And Ingreso usuario "jpaineq" y clave "jpaineq" en login del correo
+ And Presiono boton inicio de sesion en login del correo
+ When Busco y presiono correo con asunto "Bloqueo permanente de Tarjeta de Crédito" en bandeja de entrada
+ And Visualizo contenido del correo con texto estimado en comprobante enviado a correo
+ And Visualizo titulo con "Hola, Celulas No Tocar Bloqueaste tu Tarjeta de Crédito terminada en" "<tarjeta>" en comprobante enviado a correo
+ And Visualizo titulo "Detalles de la operación" en comprobante enviado a correo
+ And Visualizo codigo "Código de bloqueo:" con su respectivo codigo en comprobante enviado a correo
+ And Visualizo texto que indica "Número de tarjeta:" con "<tarjeta>" en comprobante enviado a correo
+ And Visualizo texto que indica "Fecha:" con "DD/MM/AAAA" en comprobante enviado a correo
+ And Visualizo texto que indica "Hora:" con "HH:MM" en comprobante enviado a correo
+ And Visualizo texto que indica "Sucursal de retiro:" con "<Sucursal>" en comprobante enviado a correo
+ And Visualizo texto que indica "Comuna:" con "<Comuna>" en comprobante enviado a correo
+ And Visualizo aviso "Tarjeta disponible desde:" con "4 días hábiles desde la fecha de bloqueo" en comprobante enviado a correo
+ And Visualizo campo "horario" "Horario de atención:" con "Lunes a viernes, 9:00 a 14:00 h. Sábado, domingos y festivos, cerrado." en comprobante enviado a correo
+ Then Visualizo texto informativo que indica "Si tienes dudas, contáctanos al 600 692 8000" en comprobante enviado a correo
+
+Examples:
+ | rut        | tarjeta | Region               | Comuna   | Sucursal      |
+ | 11013408-8 | 8452    | REGION METROPOLITANA | SANTIAGO | CHACABUCO 848 |
