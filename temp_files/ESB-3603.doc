@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#ESB-3603] Prueba de Certificación - Ciclo 1</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://bcibank.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://bcibank.atlassian.net/browse/ESB-3576">Creación endpoint en ms-bciplus-neg  para validar si un cliente tiene  tarjeta de crédito que acumulan cashback</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://bcibank.atlassian.net/browse/ESB-3576">ESB-3576</a>)</span>
+                <h3 class="formtitle"><img src="https://bcibank.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [ESB-3603]&nbsp;<a href="https://bcibank.atlassian.net/browse/ESB-3603">Prueba de Certificación - Ciclo 1</a>
+            <span class="subText">
+               Creada: 30/ene/25                   &nbsp;Actualizada: 30/ene/25
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Estado:</b></td>
+        <td width="80%">En Curso</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Proyecto:</b></td>
+        <td width="80%"><a href="https://bcibank.atlassian.net/secure/BrowseProject.jspa?id=13393">ECODIG - SDK _ BciPlus+</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Componentes:</b></td>
+            <td>
+                            Ninguno
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Versiones afectadas:</b></td>
+            <td>
+                            Ninguno
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Versiones corregidas:</b></td>
+            <td>
+                            Ninguno
+                </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Principal:</b></td>
+        <td width="80%"><a href="https://bcibank.atlassian.net/browse/ESB-3576">Creación endpoint en ms-bciplus-neg  para validar si un cliente tiene  tarjeta de crédito que acumulan cashback</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Tipo:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Sub-Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Prioridad:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Informador:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:67871338-8b90-4648-a2d6-a3cfb4fbda16"
+                id="word_reporter_712020:67871338-8b90-4648-a2d6-a3cfb4fbda16"
+                href="https://bcibank.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A67871338-8b90-4648-a2d6-a3cfb4fbda16">
+                    Marco Torres
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Persona asignada:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:67871338-8b90-4648-a2d6-a3cfb4fbda16"
+                id="word_assignee_712020:67871338-8b90-4648-a2d6-a3cfb4fbda16"
+                href="https://bcibank.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A67871338-8b90-4648-a2d6-a3cfb4fbda16">
+                    Marco Torres
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolución:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Sin resolver
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votos:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Etiquetas:</b>
+        </td>
+        <td id="labels-1143115-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Ninguno
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Trabajo restante estimado:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconocido
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Tiempo Trabajado:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconocido
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Estimación original:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Desconocido
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10103-1143115-value" class="value" bgcolor="#ffffff" width="80%">Sprint 1 - Q1 2025</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>ID OCTANE:</b></td>
+                <td id="customfield_11266-1143115-value" class="value" bgcolor="#ffffff" width="80%">      1364131
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Aprobación QA Funcional:</b></td>
+                <td id="customfield_10830-1143115-value" class="value" bgcolor="#ffffff" width="80%">    NO Aprobado
+</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Descripción</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><a href="https://docs.google.com/document/d/1tgHgPPDZnfryw00VgD_S7gghIw1K6wQIp4Xd9IjIFTo/edit?tab=t.0" title="smart-link" class="external-link" rel="nofollow noreferrer">https://docs.google.com/document/d/1tgHgPPDZnfryw00VgD_S7gghIw1K6wQIp4Xd9IjIFTo/edit?tab=t.0</a> </p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comentarios</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-1158477"><td bgcolor="#f0f0f0">
+              Comentado por
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:67871338-8b90-4648-a2d6-a3cfb4fbda16"
+                id="word_commented_712020:67871338-8b90-4648-a2d6-a3cfb4fbda16"
+                href="https://bcibank.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A67871338-8b90-4648-a2d6-a3cfb4fbda16">
+                    Marco Torres
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">30/ene/25</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-1158477"><td bgcolor="#ffffff">
+            <p>Se solicita via correo data asociado al ticket 3498 a TDM</p>
+        </td></tr>
+                <tr id="comment-header-1158599"><td bgcolor="#f0f0f0">
+              Comentado por
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:67871338-8b90-4648-a2d6-a3cfb4fbda16"
+                id="word_commented_712020:67871338-8b90-4648-a2d6-a3cfb4fbda16"
+                href="https://bcibank.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A67871338-8b90-4648-a2d6-a3cfb4fbda16">
+                    Marco Torres
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">30/ene/25</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-1158599"><td bgcolor="#ffffff">
+            <p>ICP <a href="https://bcibank.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Afbe869d4-c53d-4bab-9bec-d3c61a6117c2" class="user-hover" rel="712020:fbe869d4-c53d-4bab-9bec-d3c61a6117c2" data-account-id="712020:fbe869d4-c53d-4bab-9bec-d3c61a6117c2" accountid="712020:fbe869d4-c53d-4bab-9bec-d3c61a6117c2" rel="noreferrer">Francisca Tapia</a>  de stas pruebas de MS alguna q aplique Ruta Critica?</p>
+
+<p>SDK_ms_Cliente con TDC habilitada para cashback</p>
+
+<p>Descripción</p>
+
+<p>La prueba consiste en que al realizar una consulta mediante el rut del cliente  al ms-bciplus-orq mediante el endpoint cashback, si este cuenta con TDC habilitada para cashback debe retornar en el response con el campo tarjetaConBeneficioCashback = true y el campo mensaje =  "El cliente tiene al menos una tarjeta con beneficio cashback"</p>
+
+
+
+<p>Precondición</p>
+
+<p>VPN activa</p>
+
+<p>HDU ambientada en Cert</p>
+
+<p>Rut de prueba</p>
+
+<p>Curl</p>
+
+
+
+<p>Criterios de Aceptación</p>
+
+<p>Validar response campo  tarjetaConBeneficioCashback = true</p>
+
+<p>Validar response campo  mensaje =  "El cliente tiene al menos una tarjeta con beneficio cashback"</p>
+
+
+
+<p>Postcondición</p>
+
+<p>El proceso finaliza satisfactoriamente</p>
+
+<hr />
+
+<p>SDK_ms_Cliente con TDC No habilitada para cashback</p>
+
+<p>Descripción</p>
+
+<p>La prueba consiste en que al realizar una consulta mediante el rut del cliente  al ms-bciplus-orq mediante el endpoint cashback, si este NO cuenta con TDC habilitada para cashback debe retornar en el response con el campo tarjetaConBeneficioCashback = false y el campo mensaje =  "El cliente tiene al menos una tarjeta con beneficio cashback"</p>
+
+
+
+<p>Precondición</p>
+
+<p>VPN activa</p>
+
+<p>HDU ambientada en Cert</p>
+
+<p>Rut de prueba</p>
+
+<p>Curl</p>
+
+
+
+<p>Criterios de Aceptación</p>
+
+<p>Validar response campo  tarjetaConBeneficioCashback = false</p>
+
+<p>Validar response campo  mensaje =  "El cliente no tiene tarjetas con beneficio cashback."</p>
+
+
+
+<p>Postcondición</p>
+
+<p>El proceso finaliza satisfactoriamente</p>
+
+<hr />
+
+<p>SDK_ms_Cliente tiene TDC asociada al rut</p>
+
+<p>Descripción</p>
+
+<p>La prueba consiste en que al realizar una consulta mediante el rut del cliente  al ms-bciplus-orq mediante el endpoint cashback, si este NO cuenta con TDC habilitada para cashback debe retornar en el response con el campo tarjetaConBeneficioCashback = false y el campo mensaje =  "El cliente tiene al menos una tarjeta con beneficio cashback"</p>
+
+
+
+<p>Precondición</p>
+
+<p>VPN activa</p>
+
+<p>HDU ambientada en Cert</p>
+
+<p>Rut de prueba</p>
+
+<p>Curl</p>
+
+
+
+<p>Criterios de Aceptación</p>
+
+<p>Validar response campo  tarjetaConBeneficioCashback = false</p>
+
+<p>Validar response campo  mensaje =   "El cliente no tiene tarjetas de crédito."</p>
+
+
+
+<p>Postcondición</p>
+
+<p>El proceso finaliza satisfactoriamente</p>
+        </td></tr>
+                <tr id="comment-header-1158601"><td bgcolor="#f0f0f0">
+              Comentado por
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:67871338-8b90-4648-a2d6-a3cfb4fbda16"
+                id="word_commented_712020:67871338-8b90-4648-a2d6-a3cfb4fbda16"
+                href="https://bcibank.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A67871338-8b90-4648-a2d6-a3cfb4fbda16">
+                    Marco Torres
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">30/ene/25</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-1158601"><td bgcolor="#ffffff">
+            <p>DCP</p>
+
+<p>Scenario Outline: SDK_ms_consulta estado de TDC para cumulacion de Cashback</p>
+
+<p> Given Seteo la URL del ms <a href="http://localhost:8080/tarjetas/cashback?rut=&quot;&lt;rut&gt;&quot;" class="external-link" rel="nofollow noreferrer">http://localhost:8080/tarjetas/cashback?rut="&lt;rut&gt;"</a> del GET</p>
+
+<p>  And seteo los headers incluyendo token ------</p>
+
+<p>  And seteo el body params los siguientes campos:</p>
+
+<p>  """</p>
+
+    {
+
+    "&lt;rut&gt;"
+
+}
+
+<p>    """</p>
+
+<p>  When realizo una solicitud GET a la API</p>
+
+<p>  Then valido respuesta "&lt;status&gt;"</p>
+
+<p>  And valido response "&lt;beneficio&gt;"</p>
+
+<p>  And valido response "&lt;mensaje&gt;"</p>
+
+<p>    Examples:</p>
+
+<div class='table-wrap'>
+<table class='confluenceTable'><tbody>
+<tr>
+<td class='confluenceTd'> rut        </td>
+<td class='confluenceTd'>status</td>
+<td class='confluenceTd'> beneficio </td>
+<td class='confluenceTd'>mensaje</td>
+</tr>
+</tbody></table>
+</div>
+
+
+<div class='table-wrap'>
+<table class='confluenceTable'><tbody>
+<tr>
+<td class='confluenceTd'> 76171658-1 </td>
+<td class='confluenceTd'>200 OK</td>
+<td class='confluenceTd'> true	      </td>
+<td class='confluenceTd'> "El cliente tiene al menos una tarjeta con beneficio cashback"</td>
+</tr>
+</tbody></table>
+</div>
+
+
+<div class='table-wrap'>
+<table class='confluenceTable'><tbody>
+<tr>
+<td class='confluenceTd'> 76171658-1 </td>
+<td class='confluenceTd'>200 OK</td>
+<td class='confluenceTd'> false	      </td>
+<td class='confluenceTd'> "El cliente no tiene tarjetas con beneficio cashback."</td>
+</tr>
+</tbody></table>
+</div>
+
+
+<div class='table-wrap'>
+<table class='confluenceTable'><tbody>
+<tr>
+<td class='confluenceTd'> 76171658-1 </td>
+<td class='confluenceTd'>200 OK</td>
+<td class='confluenceTd'> false	      </td>
+<td class='confluenceTd'> "El cliente no tiene tarjetas de crédito."</td>
+</tr>
+</tbody></table>
+</div>
+
+        </td></tr>
+            </table>
+Generado a las Fri Jan 31 18:40:25 GMT 2025 por Marco Torres usando JIRA 1001.0.0-SNAPSHOT#100278-rev:8f6bc4322f498b62829035d2bf81c18f8e8923cf.
+
+</body>
+</html>
