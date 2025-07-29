@@ -1,0 +1,21 @@
+
+# Para correr el codigo de la documentacion se debe utilizar el comando
+# - mkdocs serve
+
+# mkdocs.yml
+site_name: Bci Project 
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings:
+      default_handler: python
+      extra_python_path: ["./modules","./pages"]
+
+
+nav:
+  - Guia de Uso JIRA: index.md
+  - Guia de Uso SDM: htusdm.md
+  - Modulos: modules.md
+
